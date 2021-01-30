@@ -16,12 +16,111 @@
 				href="css/libs.min.css">
 	<link rel="stylesheet"
 				href="css/style.min.css">
-	<title>Easy webdev startpack - test</title>
+	<title>Deskolus</title>
 </head>
 
 <body>
-	<header class="header"></header>
+	<header class="header">
+  <div class="container">
+    <div class="header__inner">
+      <a href="#" class="header__logo logo">
+        <img src="img/logo.svg" alt="logo">
+      </a>
+      <nav class="header__nav nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#" class="nav__link">Showroom</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Product</a></li>
+        </ul>
+        <a href="#" class="header__contact">Contact</a>
+      </nav>
+      <button class="burger" aria-label="Открыть меню">
+        <span></span>
+      </button>
+    </div>
+    <div class="header__content">
+      <h1 class="header__title">Good Living Better LIVE</h1>
+      <p class="header__descr">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam aliquam diam dictum mattis.
+      </p>
+      <form action="#" class="header-form">
+        <input type="text" class="header-form__input" placeholder="Enter product name">
+        <button type="submit" class="header-form__btn">Search</button>
+      </form>
+    </div>
+  </div>
+</header>
 	<main class="main">
+    <section class="fave">
+  <div class='container'>
+    <h2 class="fave__title title">Our Fave Kits</h2>
+    <div class="fave__items">
+      <a href="#" class="fave-item" style="background-image: url(./img/fave-1.jpg);">
+        <div class="fave-item__top">
+          <p class="fave-item__info">Sale</p>
+        </div>
+        <!-- <img class="fave-item__img" src="img/fave-1.jpg" alt="White Swan Chair"> -->
+        <div class="fave-item__footer">
+          <h4 class="fave-item__title">White Swan Chair</h4>
+          <div class="fave-item__price">$69.99</div>
+        </div>
+      </a>
+      <a href="#" class="fave-item" style="background-image: url(img/fave-2.jpg);">
+        <div class="fave-item__top dn">
+          <p class="fave-item__info">Sale</p>
+        </div>
+        <!-- <img class="fave-item__img" src="img/fave-2.jpg" alt="Urban sofa set"> -->
+        <div class="fave-item__footer">
+          <h4 class="fave-item__title">Urban sofa set</h4>
+          <div class="fave-item__price">$569</div>
+        </div>
+      </a>
+      <a href="#" class="fave-item" style="background-image: url(img/fave-3.jpg);">
+        <div class="fave-item__top">
+          <p class="fave-item__info">Sale</p>
+        </div>
+        <!-- <img class="fave-item__img" src="img/fave-3.jpg" alt="Big  Mono • Kitchen set"> -->
+        <div class="fave-item__footer">
+          <h4 class="fave-item__title">Big Mono • Kitchen set</h4>
+          <div class="fave-item__price">$569</div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+    <section class="furniture">
+  <div class='container'>
+    <div class="furniture__inner">
+      <div class="furniture__content">
+        <p class="furniture__subtitle subtitle">Simple & Modern</p>
+        <h2 class="furniture__title title">Furniture</h2>
+        <p class="furniture__descr">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pretium semper porta dui. Lorem ipsum dolor sit
+          amet,consectetur adipiscing elit. Pretium semper porta dui.
+        </p>
+        <a href="" class="furniture__btn btn">order now</a>
+      </div>
+      <div class="furniture__image">
+        <div class="furniture__image-block">
+          <img src="img/furniture-up.png" alt="" class="furniture__image-top">
+          <img src="img/furniture-down.png" alt="" class="furniture__image-bottom">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    <section class="video-block">
+  <div class="video-block__content" style="background-image: url('./img/video.jpg');">
+    <a href="#" class="video-block__play play-btn">
+      <span class="play-btn__triangle"></span>
+    </a>
+  </div>
+</section>
+    <section class="benefits">
+  <div class='container'>
+    <p class="benefits__subtitle subtitle">Simple & Modern</p>
+    <h2 class="benefits__title title">Benefits You Get WhenUsing Our Services</h2>
+  </div>
+</section>
 	</main>
 	<footer class="footer"></footer>
 	<script src="js/libs.min.js"></script>

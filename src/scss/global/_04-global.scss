@@ -1,21 +1,27 @@
 html {
-	box-sizing: border-box;
-	font-size: 16px;
+  box-sizing: border-box;
+  font-size: 16px;
 }
 
 *,
 *::before,
 *::after {
-	box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 html,
 body {
-	height: 100%;
-	position: relative;
+  height: 100%;
+  position: relative;
 }
 
-body {}
+body {
+  font-family: "Poppins";
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--text);
+  overflow-x: hidden;
+}
 
 ul,
 ol,
@@ -27,44 +33,121 @@ h3,
 h4,
 h5,
 h6 {
-	margin: 0;
+  margin: 0;
+}
+
+ul li {
+	list-style: none;
 }
 
 button:focus,
 input:focus {
-	outline: transparent;
+  outline: transparent;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 button {
-	@include no-btn;
+  @include no-btn;
 }
 
 .flex {
-	display: flex;
-	align-items: flex-start;
-	justify-content: flex-start;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 
 .--just-space {
-	justify-content: space-between;
+  justify-content: space-between;
 }
 
 .--just-center {
-	justify-content: center;
+  justify-content: center;
 }
 
 .--just-end {
-	justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 .--align-str {
-	align-items: stretch;
+  align-items: stretch;
 }
 
 .--align-center {
-	align-items: center;
+  align-items: center;
 }
 
 .--align-end {
-	align-items: flex-end;
+  align-items: flex-end;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.title {
+  position: relative;
+  font-weight: 500;
+  font-size: 52px;
+  color: var(--black);
+}
+
+.title::after {
+  content: "";
+  position: absolute;
+  width: 154px;
+  height: 6px;
+  background-color: var(--blue);
+  left: 0;
+  bottom: 0;
+}
+
+.subtitle {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: var(--black);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.burger {
+  display: none;
+  position: relative;
+  width: 40px;
+  height: 20px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.burger::before,
+.burger::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--black);
+}
+
+.burger::after {
+  top: auto;
+  bottom: 0;
+}
+
+.burger span {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  height: 2px;
+  display: inline-block;
+  background-color: var(--black);
 }
