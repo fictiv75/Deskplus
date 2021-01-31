@@ -119,6 +119,12 @@ button {
   text-transform: uppercase;
 }
 
+.descr {
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--text);
+}
+
 .burger {
   display: none;
   position: relative;

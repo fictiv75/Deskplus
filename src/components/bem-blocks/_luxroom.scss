@@ -1,0 +1,68 @@
+.luxroom {
+  padding-top: 73px;
+  padding-bottom: 73px;
+
+  &__wrapper {
+    display: flex;
+  }
+}
+
+.luxroom-images {
+  position: relative;
+  padding-right: 86px;
+
+  &__text {
+    padding-top: 30px;
+    padding-left: 30px;
+    position: absolute;
+    width: 230px;
+    height: 216px;
+    font-weight: 600;
+    font-size: 62px;
+    line-height: 60px;
+    color: #fff;
+    background: rgba(8, 61, 110, 0.8);
+    border-radius: 0px 0px 200px 0px;
+  }
+
+  &__img {
+  }
+
+  &__circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 342px;
+    height: 342px;
+    background-color: #fff;
+    border-radius: 50%;
+    bottom: -74px;
+    right: 38px;
+  }
+
+  &__center {
+    position: absolute;
+    background-image: url("../../img/luxroom-logo.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    // background-size: cover;
+    
+    z-index: 5;
+  }
+}
+.luxroom-content {
+  max-width: 445px;
+
+  &__subtitle {
+  }
+
+  &__title {
+  }
+
+  &__descr {
+  }
+
+  &__btn {
+  }
+}
