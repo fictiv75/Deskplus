@@ -24,20 +24,21 @@
 
 .benifits {
   &__body {
+    position: relative;
     max-width: 1190px;
-    // margin-left: 222px;
     margin: 0 auto;
+    left: 26px;
   }
 
   &__row {
     display: flex;
-    margin: 0 -15px;
+    margin: 0 -15.5px;
   }
 
   &__column {
-    padding: 0 15px;
+    padding: 0 15.5px;
     display: flex;
-    // flex: 0 1 33.333%;
+    flex: 0 1 33.333%;
   }
 
   &__item {
